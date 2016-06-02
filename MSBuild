@@ -1,6 +1,6 @@
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Test">
   <ItemGroup>
-    <SolutionFile Include="WebApp.sln" />
+    <SolutionFile Include="jenkins_sonar_csharp.sln" />
     <TestResultsDir Include="TestResults" />
   </ItemGroup>
  
