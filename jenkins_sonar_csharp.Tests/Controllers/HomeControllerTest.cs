@@ -46,7 +46,6 @@ namespace jenkins_sonar_csharp.Tests.Controllers
 
             // Act
             ViewResult result = controller.Contact() as ViewResult;
-            result = null;
 
             // Assert
             result.Should().NotBeNull();
