@@ -22,7 +22,7 @@
  
   <Target Name="Test" DependsOnTargets="Compile">
     <ItemGroup>
-      <TestAssemblies Include="**bin$(Configuration)*.Tests.dll" />
+      <TestAssemblies Include="**bin$(Configuration)*.Test*.dll" />
     </ItemGroup>
  
     <PropertyGroup>
