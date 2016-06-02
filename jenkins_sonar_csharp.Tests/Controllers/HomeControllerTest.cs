@@ -3,16 +3,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Web.Mvc;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
 using jenkins_sonar_csharp;
 using jenkins_sonar_csharp.Controllers;
+using NUnit.Framework;
+using FluentAssertions;
 
 namespace jenkins_sonar_csharp.Tests.Controllers
 {
-    [TestClass]
     public class HomeControllerTest
     {
-        [TestMethod]
+        [Test]
         public void Index()
         {
             // Arrange
@@ -22,10 +22,10 @@ namespace jenkins_sonar_csharp.Tests.Controllers
             ViewResult result = controller.Index() as ViewResult;
 
             // Assert
-            Assert.IsNotNull(result);
+            result.Should().NotBeNull();
         }
 
-        [TestMethod]
+        [Test]
         public void About()
         {
             // Arrange
@@ -35,10 +35,10 @@ namespace jenkins_sonar_csharp.Tests.Controllers
             ViewResult result = controller.About() as ViewResult;
 
             // Assert
-            Assert.AreEqual("Your application description page.", result.ViewBag.Message);
+            Assert.That("Your application description page.", Is.EqualTo(result.ViewBag.Message));
         }
 
-        [TestMethod]
+        [Test]
         public void Contact()
         {
             // Arrange
@@ -46,9 +46,10 @@ namespace jenkins_sonar_csharp.Tests.Controllers
 
             // Act
             ViewResult result = controller.Contact() as ViewResult;
+            result = null;
 
             // Assert
-            Assert.IsNotNull(null);
+            result.Should().NotBeNull();
         }
     }
 }
