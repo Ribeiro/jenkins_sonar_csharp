@@ -35,7 +35,7 @@ namespace jenkins_sonar_csharp.Tests.Controllers
             ViewResult result = controller.About() as ViewResult;
 
             // Assert
-            Assert.That("Fake...", Is.EqualTo(result.ViewBag.Message));
+            Assert.That("Your application description page.", Is.EqualTo(result.ViewBag.Message));
         }
 
         [Test]
