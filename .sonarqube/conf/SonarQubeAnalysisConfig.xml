@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AnalysisConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.sonarsource.com/msbuild/integration/2015/1">
+  <SonarConfigDir>C:\Users\geovannyribeiro\Documents\Visual Studio 2013\Projects\jenkins_sonar_csharp\.sonarqube\conf</SonarConfigDir>
+  <SonarOutputDir>C:\Users\geovannyribeiro\Documents\Visual Studio 2013\Projects\jenkins_sonar_csharp\.sonarqube\out</SonarOutputDir>
+  <SonarBinDir>C:\Users\geovannyribeiro\Documents\Visual Studio 2013\Projects\jenkins_sonar_csharp\.sonarqube\bin</SonarBinDir>
+  <SonarRunnerWorkingDirectory>C:\Users\geovannyribeiro\Documents\Visual Studio 2013\Projects\jenkins_sonar_csharp</SonarRunnerWorkingDirectory>
+  <SonarQubeHostUrl>http://localhost:9000</SonarQubeHostUrl>
+  <SonarProjectKey>jenkins_sonar_csharp</SonarProjectKey>
+  <SonarProjectVersion>1.0</SonarProjectVersion>
+  <SonarProjectName>jenkins_sonar_csharp</SonarProjectName>
+  <AdditionalConfig>
+    <ConfigSetting Id="BuildUri" />
+    <ConfigSetting Id="TfsUri" />
+    <ConfigSetting Id="settings.file.path" Value="C:\Users\geovannyribeiro\AppData\Local\Temp\tmp8232.tmp" />
+  </AdditionalConfig>
+  <ServerSettings>
+    <Property Name="sonar.qualitygate">1</Property>
+    <Property Name="sonar.permission.template.default">default_template</Property>
+    <Property Name="sonar.scm.disabled">false</Property>
+    <Property Name="sonar.core.id">20160603095858</Property>
+    <Property Name="sonar.core.version">5.5</Property>
+    <Property Name="sonar.core.startTime">03/06/2016 09:58:58</Property>
+    <Property Name="sonar.cs.msbuild.testProjectPattern">[^\\]*test[^\\]*$</Property>
+  </ServerSettings>
+  <LocalSettings>
+    <Property Name="sonar.verbose">true</Property>
+    <Property Name="sonar.host.url">http://localhost:9000</Property>
+  </LocalSettings>
+  <AnalyzerSettings>
+    <RuleSetFilePath>C:\Users\geovannyribeiro\Documents\Visual Studio 2013\Projects\jenkins_sonar_csharp\.sonarqube\conf\SonarQubeRoslyn-cs.ruleset</RuleSetFilePath>
+    <AnalyzerAssemblyPaths>
+      <Path>C:\Users\geovannyribeiro\AppData\Local\Temp\.sonarqube\.static\csharp_1.11.0\SonarAnalyzer.zip\SonarAnalyzer.CSharp.dll</Path>
+      <Path>C:\Users\geovannyribeiro\AppData\Local\Temp\.sonarqube\.static\csharp_1.11.0\SonarAnalyzer.zip\SonarAnalyzer.dll</Path>
+      <Path>C:\Users\geovannyribeiro\AppData\Local\Temp\.sonarqube\.static\csharp_1.11.0\SonarAnalyzer.zip\SonarAnalyzer.zip</Path>
+    </AnalyzerAssemblyPaths>
+    <AdditionalFilePaths>
+      <Path>C:\Users\geovannyribeiro\Documents\Visual Studio 2013\Projects\jenkins_sonar_csharp\.sonarqube\conf\SonarLint.xml</Path>
+    </AdditionalFilePaths>
+  </AnalyzerSettings>
+</AnalysisConfig>
